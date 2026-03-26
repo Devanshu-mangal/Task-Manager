@@ -1,0 +1,9 @@
+# Railway: set root directory to `backend` in project settings.
+# Environment: MONGODB_URI, JWT_SECRET, NODE_ENV=production, CORS_ORIGIN
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "ON_FAILURE"
