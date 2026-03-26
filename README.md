@@ -127,15 +127,6 @@ Examples: `backend/.env.example`, `frontend/.env.example`.
 
 Step-by-step **free-tier** deployment (GitHub, MongoDB Atlas, Render, Vercel) is in **[`DEPLOY.md`](DEPLOY.md)**.
 
----
-
-## GitHub language bar (“JavaScript only”)
-
-GitHub uses [Linguist](https://github.com/github-linguist/linguist): **`.jsx` files are counted as JavaScript**, so the bar will not show a separate “React” slice. That is normal. This repo uses **badges above** and **[`TECH_STACK.md`](TECH_STACK.md)** so the stack (React, Vite, Express, MongoDB, Tailwind) is explicit.
-
-If **`frontend/dist`** was ever committed, it can skew the bar toward huge bundled JS. The repo includes **`.gitattributes`** so generated build output is excluded from language statistics when present. Prefer **not** committing `dist/` (see `.gitignore`); build on the host (e.g. Vercel).
-
----
 
 ## License
 
